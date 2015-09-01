@@ -1,0 +1,66 @@
+*{}
+#about_table{
+	padding: 0;
+	border-spacing: 0;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bio{
+	font-family: 'DroidSerif';
+	background: rgba(179, 182, 181, 0.45);
+	float: right;
+	text-align: left;
+	margin: 0;
+	width: 85vmin;
+	padding: 10px;
+	border-radius: 20px;
+
+}
+
+
+#profile_img{
+	border-radius: 10px;
+	border-spacing: 10px; 
+	height: 40.0vmin;
+}
+
+#td_profile_img{
+	margin: 0;
+	padding-left: 12px;
+
+
+}
+
+table{
+	margin: 0;
+	padding: 0;
+}
+
+table td{
+	border: 0px dotted;
+	width: 70.0vmin;
+	vertical-align: top;`
+}
+
+/*Diff Screen Sizes*/
+
+@media (max-width: 992px){
+	.bio{
+		font-size: 81%;
+		width: 70vmin;
+	}
+	#profile_img{
+		height: 40.0vmin;
+	}
+}
+
+@media (max-width: 648px){
+	.bio{
+		font-size: 81%;
+		width: 50vmin;
+	}
+	#profile_img{
+		height: 40.0vmin;
+	}
+}

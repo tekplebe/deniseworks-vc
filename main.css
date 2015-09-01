@@ -1,0 +1,195 @@
+*{}
+
+html {
+	background: url('city.JPG') no-repeat center center; 
+	min-height: 100%;
+	background-size: cover;
+	max-width: 100%;
+}
+
+@font-face{
+	font-family: 'Merriweather-Regular';
+	src: url(Merriweather-Regular.ttf);
+}
+
+@font-face{
+	font-family: 'ReenieBeanie';
+	src: url(ReenieBeanie.ttf);
+}
+
+@font-face{
+	font-family: 'DroidSerif';
+	src: url(DroidSerif.ttf);
+}
+
+@font-face{
+	font-family: 'FrederickattheGreat-Regular';
+	src: url(FrederickattheGreat-Regular.ttf);
+}
+@font-face{
+	font-family: 'Lora-Regular';
+	src: url(Lora-Regular.ttf);
+}
+@font-face{
+	font-family: 'Neucha';
+	src: url(Neucha.ttf);
+}
+
+@font-face{
+	font-family: 'PT_Serif-Web-Regular';
+	src: url(PT_Serif-Web-Regular.ttf);
+}
+
+@font-face{
+	font-family: 'CabinSketch-Regular';
+	src: url(CabinSketch-Regular.ttf);
+}
+
+/*this is the gray film over the bkg image*/
+.full-width-div {
+	position: absolute;
+	padding-top: 15vmin;
+	padding-bottom: 10vmin;
+	width: 100%;
+	min-height: 100%;
+	background: rgba(133,138,138, 0.65);
+
+}    
+.container{
+	vertical-align: middle;
+	width: 100%;
+	min-height: 100%;
+}
+
+.header{
+	padding-top: 10.0vmin;
+	padding-bottom: 7.0vmin;
+	opacity: 1.0;
+	text-align: center;
+	color: #e6f2f8;
+}
+
+
+.header h1{
+		font-size: 20.0vmin;
+}
+
+.sub-header{
+	background: rgba(189, 198, 198, 0.6);
+	border-radius: 20px;
+	font-size: 3.0vmin;
+	font-weight: bold;
+	width: 48.0vmin;
+	margin-top: 5.0vmin;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1.2vmin;
+}
+
+/*******************************/
+.bottom_wrap{
+	position: fixed;
+	bottom: 5vmin;
+	width: 180vmin;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+
+}
+.nav{
+	font-family: DroidSerif;
+	position: fixed;
+	width: 80.0vmin;
+	text-align: center;
+	font-size: 5.0vmin;
+	padding: 5px 40px;
+	color: #666666;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer{
+	font-family: DroidSerif;
+	position: fixed;
+	color: #ffff66;
+	font-size: 3.0vmin;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+.contact{
+	background: rgba(82, 86, 86, 0.7);
+	border-radius: 20px;
+	width: 80.0vmin;
+	margin-right: auto;
+	margin-left: auto;
+}
+#contact td{
+	padding: 1.0vmin;
+	font-size: 3.0vmin;
+	text-align: center;
+}
+
+#nav{
+	width: 40vmin;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav td{
+	padding: 2.0vmin;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+#about{	
+	color: #eef7fb;
+	font-size: 3.0vmin;
+	vertical-align: middle;
+	padding-top: 10.0vmin;
+	padding-bottom: 5.0vmin;
+	padding-right: 5.0vmin;
+	padding-left: 5.0vmin;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+
+	
+}
+
+#portfolio{
+	padding-bottom: 6.7vmin;
+	overflow: hidden;
+	
+}
+/*Link Styling*/
+.nav #nav a, .contact #contact a{text-decoration: none;}
+.nav #nav a:link, .nav #nav a:visited, .contact #contact a:link, .contact #contact a:visited{color:#ffff66;} 
+.nav #nav a:hover, .contact #contact a:hover{color: #fce3f9;}
+.nav #nav a: active{color: #000000;}
+
+.nav #nav a:active, .nav #nav a:focus{
+	outline: none;
+}
+
+.clearfix{
+	overflow: hidden;
+	zoom: 1;
+}
+
+
+
+/*Screen Size Change Fixes*/
+/*Home Page*/
+/*
+@media screen and (max-width: 488px){
+	.header h1{
+			font-size: 14.0vmin;
+	}
+}*/
+
+
+

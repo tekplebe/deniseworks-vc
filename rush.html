@@ -1,0 +1,63 @@
+<html>
+<head>
+<script src="rush.js"></script>
+<link rel="stylesheet" type="text/css" href="rush.css">
+
+</head>
+
+<body>
+
+<center><h1>Mad Libs</h1>
+<h6 id="content">Fill in the blanks (in order) and click "Generate." This webpage was created primarily as an exercise in JavaScript.</h6>
+</center>
+
+<!--This is organized into a table where one column (left) is the form and the column on the right shows the resulting Mad Lib-->
+<table id="content">
+<tr>
+<td>
+
+<div id="paper">
+<form>
+finger food: <input type="text" id="fruit"><br>
+bad news source: <input type="text" id="newspaper"><br>
+collective noun: <input type="text" id="noun1" onkeypress="runGather()" onkeyup="runGather()"><br>
+something <i class="collective_noun">collective noun</i> can make: <input type="text" id="noun2"><br>
+adj describing <i class="collective_noun">collective noun</i>: <input type="text" id="adj"><br>
+verb ending in -ing: <input type="text" id="verb"><br>
+plural noun: <input type="text" id="pluralnoun"><br>
+
+noun : <input type="text" id="noun3" onkeypress="runGather2()" onkeyup="runGather2()"><br>
+adj describing <i class="noun_3">noun</i>: <input type="text" id="adj2"><br>
+noun opposite of <i class="noun_3">noun</i> (if possible): <input type="text" id="pluralnoun2"><br>
+adj: <input type="text" id="adj3" onkeypress="runGather3()" onkeyup="runGather3()"><br>
+
+adj opposite of <i id="adj_3">adj</i>: <input type="text" id="adj4"><br>
+noun: <input type="text" id="noun5"><br>
+another news source: <input type="text" id="newspaper2"><br>
+adj: <input type="text" id="adj5"><br>
+adj: <input type="text" id="adj6"><br>
+verb: <input type="text" id="verb2"><br>
+an insult: <input type="text" id="noun6"><br>
+
+<p id="generate" align="center">
+<input type="button" value="Generate Mad Lib" onclick="getValues()" />
+</p>
+</form>
+</div>
+</td>
+
+<td>
+
+<div id="result" width="250">I'm a blank page. Do something about it. </div>
+<div id="view_original"><!--later--></div>
+</td>
+
+</tr>
+</table>
+
+
+
+</body>
+</html>
+
+ 

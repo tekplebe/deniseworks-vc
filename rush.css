@@ -1,0 +1,29 @@
+body
+{
+margin-top: 7%;
+font-family: Arial;
+}
+#content
+{
+margin-left: auto;
+margin-right:auto;
+width: 70%;
+}
+th, td
+{
+vertical-align: top;
+}
+#result
+{
+background-color: #F0F0F0 ;
+width: 450px;
+padding: 10px;
+font-size: 90%;
+}
+input
+{
+border-radius: 3px;
+border-top: none;
+border-left:none;
+border-right: none;
+}

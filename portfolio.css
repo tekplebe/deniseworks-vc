@@ -1,0 +1,418 @@
+*{}
+
+@font-face{
+	font-family: 'FrederickattheGreat-Regular';
+	src: url(FrederickattheGreat-Regular.ttf);
+}
+
+html{
+	font-family:sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;}
+
+#portfolio{
+	border: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	left: -50%;
+}
+
+#portfolio h2{
+	font-family: DroidSerif;
+	background: rgba(179, 182, 181, 0.2);
+	border-radius: 10px;
+	width: 90.0vmin;
+	color: #e6f2f8;
+
+}
+
+.thumb_img{
+	width: 30.0vmin;
+	height: 30.0vmin;
+	border-radius: 15px;
+}
+
+/*List inline for each project*/
+#portfolio ul.img-list{
+	border: 0;
+	background: rgba(179, 182, 181, 0.2);
+	overflow: hidden;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	/*margin-left: auto;
+	margin-right: auto;
+	padding-top: 5.0vmin;*/
+	width: 100%;
+	left: 50%;
+}
+
+#portfolio ul.img-list li{
+	border: 0;
+	display: inline-block;
+	margin: 0 1em 1em 0; /*i changed this one from em to vmin*/
+	position: relative;
+	width: 30vmin;
+
+}
+
+span.text-content{
+	background: rgba(0,0,0,0.5);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 30.15vmin;
+	width: 30.15vmin;
+	left: 0;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	padding: 0.4vmin; /*helped to ensure gray goes over entire img*/
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+	border-radius: 15px;
+}
+
+span.text-content span{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+ul.img-list li:hover span.text-content{
+	opacity: 2.0;
+	overflow: hidden;
+}
+
+#project_viewer{
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+}
+
+/*Modal Display for Individual Project*/
+.modalDialog{
+	position: fixed;
+	font-family: sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	z-index: 99999;
+	opacity: 0;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 70vw;
+	position: relative;
+	font-size: 85%;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.project_description td{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+}
+/*close modal box*/
+.close{
+	background: #ffff99;
+	color: #ffffff;
+	line-height: 25px;
+	position: absolute;
+	right:-12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.clickArea{
+	background: black;
+	opacity: 0.25;
+	width: 100%;
+}
+
+
+.project_img{
+	width: 50vmin; 
+	border: solid 1px black;
+
+}
+
+td.project_img_cell{
+	width: 40vmin;
+	word-wrap: break-word;
+	padding-right: 2vmin;
+
+}
+
+
+/*Diff Screen Sizes*/
+
+
+@media (max-width: 1180px){
+	.thumb_img{
+		width: 24.0vmin;
+		height: 24.0vmin;
+	}
+
+	#portfolio ul.img-list li{
+		width: 24.0vmin;
+	}
+
+	span.text-content{
+		width: 24.15vmin;
+		height: 24.15vmin;
+	}
+
+	#portfolio h2{
+	font-size: 4.0vmin;
+
+	}
+	.modalDialog > div {
+		width: 120vmin;
+		font-size: 85%;
+	}
+	.project_img{
+		width: 40vmin;
+	}
+
+}
+
+
+@media (max-width: 990px){
+	.thumb_img{
+		width: 22.0vmin;
+		height: 22.0vmin;
+	}
+
+	#portfolio ul.img-list li{
+		width: 22.0vmin;
+
+	}
+
+	span.text-content{
+		width: 22.15vmin;
+		height: 22.15vmin;
+	}
+	#portfolio h2{
+
+
+	}
+	.modalDialog > div {
+		width: 120vmin;
+		font-size: 85%;
+	}
+
+	.project_img{
+		width: 40vmin;
+	}
+
+}
+
+@media (max-width: 770px){
+	.thumb_img{
+		width: 20.0vmin;
+		height: 20.0vmin;
+	}
+
+	#portfolio ul.img-list li{
+		width: 20.0vmin;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+
+	}
+
+	span.text-content{
+		width: 20.0vmin;
+		height: 20.0vmin;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 90%;
+		padding-right: 2vmin;
+		padding-left: 2vmin;
+		padding-top: 4vmin;
+	}
+	#portfolio h2{
+
+
+	}
+	.modalDialog > div {
+		width: 110vmin;
+		font-size: 90%;
+	}
+
+	.project_img{
+		width: 40vmin;
+	}
+}
+@media (max-width: 705px){
+	.thumb_img{
+		width: 15.0vmin;
+		height: 15.0vmin;
+	}
+
+	#portfolio ul.img-list li{
+		width: 15.0vmin;
+		height: 15.0vmin;
+
+	}
+
+	span.text-content{
+		width: 15.0vmin;
+		height: 15.0vmin;
+		padding-left: 2px;
+		padding-right: 2px;
+		
+	}
+
+	span.text-content span{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 80%;
+	}
+
+	#portfolio h2{
+	font-size: 4.0vmin;
+
+	}
+	.modalDialog > div {
+		width: 90vmin;
+		font-size: 75%;
+	}
+
+	.project_img{
+		width: 40vmin;
+	}
+}
+
+@media (max-width: 520px){
+	.thumb_img{
+		width: 12.0vmin;
+		height: 12.0vmin;
+	}
+
+	#portfolio ul.img-list li{
+		width: 12.0vmin;
+		height: 12.0vmin;
+
+	}
+
+	span.text-content{
+		width: 12.0vmin;
+		height: 12.0vmin;
+		padding-left: 2px;
+		padding-right: 2px;
+		
+	}
+
+	span.text-content span{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15%;
+	}
+
+	#portfolio h2{
+	font-size: 4.0vmin;
+
+	}
+	.modalDialog > div {
+		width: 90vmin;
+		font-size: 45%;
+	}
+
+	.project_img{
+		width: 40vmin;
+	}
+}
+
+@media (max-width: 400px){
+
+	#portfolio{
+	padding-bottom: 6.7vmin;
+	overflow: hidden;
+	clear: left;
+	
+}
+	.thumb_img{
+		width: 20vmin;
+		height: 20.0vmin;
+	}
+
+	#portfolio ul.img-list{
+		float: left;
+		list-style-type: none;
+		display: inline-block;
+		zoom:1; 
+		display: inline; 
+		height: 70px;
+	}
+
+	#portfolio ul.img-list li{
+		display: inline-block;
+		width: 20.0vmin;
+		height: 20.0vmin;
+
+	}
+
+	span.text-content{
+		width: 20.0vmin;
+		height: 20.0vmin;
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 2vmin;
+		padding-left: 2vmin;
+		padding-top: 4vmin;
+	}
+
+	span.text-content span{
+		font-size: 70%;
+		text-align: center;
+
+	}
+
+	#portfolio h2{
+
+	}
+	.modalDialog > div {
+		width: 100vmin;
+		font-size: 30%;
+	}
+
+	.project_img{
+		width: 40vmin;
+	}
+
+}
